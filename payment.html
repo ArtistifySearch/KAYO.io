@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>KAYO.io - Buy the Top-Down Tower Defense Game</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffecd2, #fcb69f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    color: #222;
+  }
+
+  h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+  }
+
+  .buy-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 40px;
+    font-size: 2em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transition: background 0.3s, transform 0.2s;
+  }
+
+  .buy-button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+  }
+
+  .price {
+    font-size: 2em;
+    margin-top: 20px;
+    color: #e91e63;
+  }
+
+  @media(max-width: 600px){
+    h1 { font-size: 2em; }
+    .buy-button { padding: 15px 30px; font-size: 1.5em; }
+  }
+</style>
+</head>
+<body>
+
+<h1>KAYO.io</h1>
+<p>Get the Ultimate Top-Down Tower Defense Game for Only $49.99!</p>
+<div class="price">$49.99</div>
+<button class="buy-button" onclick="purchase()">Buy Now</button>
+
+<script>
+  function purchase() {
+    // Replace the URL with your actual payment link (e.g., PayPal, Stripe, etc.)
+    window.location.href = "https://yourpaymentlink.com";
+  }
+</script>
+
+</body>
+</html>
